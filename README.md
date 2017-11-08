@@ -53,6 +53,9 @@ pb private
 
 ### screenshot
 
+This uses `maim` to create a screenshot. You can either click-drag a bounding
+box for a region, or click a window for the entire window.
+
 ```sh
 pb png
 ```
