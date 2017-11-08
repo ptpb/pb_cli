@@ -92,7 +92,7 @@ $ PB_JSON='.' pb <<< test
 So, for example:
 
 ```sh
-$ eval "$(PB_JSON='.' pb <<< test | jq -r '@sh "url=\(.url) short=\(.short)")"
+$ eval "$(PB_JSON='.' pb <<< test | jq -r '@sh "url=\(.url) short=\(.short)"')"
 $ echo $short
 f5-D
 $ echo $url
