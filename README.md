@@ -63,8 +63,8 @@ pb png
 ### screen capture
 
 This uses [`capture`](https://github.com/buhman/capture) to create a screen
-capture, convert to webm or gif, and upload to pb, all at once. Usage is very
-similar to `pb png`--both use slop for window/region selection.
+capture, convert to webm or gif, and upload to pb. Usage is very similar to `pb
+png`--both use slop for window/region selection.
 
 ```sh
 pb webm
