@@ -3,7 +3,7 @@ set -e
 
 
 fetch_source () {
-  curl -Lo- https://github.com/buhman/pb_cli/archive/master.tar.gz \
+  curl -Lo- https://github.com/ptpb/pb_cli/archive/master.tar.gz \
       | tar xz -C "$tmpdir" --strip-components=1
 }
 

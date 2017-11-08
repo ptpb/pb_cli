@@ -7,7 +7,7 @@
 An install script is provided for convenience.
 
 ```sh
-$ curl -Lo- "https://raw.githubusercontent.com/buhman/pb_cli/master/install.sh" | sudo bash
+$ curl -Lo- "https://raw.githubusercontent.com/ptpb/pb_cli/master/install.sh" | sudo bash
 ```
 
 This is just a handful of trivial commands to install `pb` in
