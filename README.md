@@ -20,6 +20,7 @@ exist on your own.
 
  - `curl`
  - `bash>4.0`
+ - `jq`
  - [`capture`](https://github.com/buhman/capture) (optional, for screen capture)
  - `maim` (optional, for screenshots)
 
