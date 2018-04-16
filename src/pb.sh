@@ -6,7 +6,7 @@ private="${PB_PRIVATE:-0}"
 
 
 pb_ () {
-  local command filename
+  local filename extension
 
   filename="${1:--}"
   extension="${2:-}"
@@ -30,6 +30,17 @@ pb_gif () {
 
 pb_webm () {
   capture webm - | pb_ - .webm
+}
+
+pb_clipboard () {
+  if [[ $(uname) == [Ll]inux ]]; then
+    pb_ "$@" | xclip
+  elif [[ $(uname) == Darwin ]]; then
+    pb_ "$@" | pbcopy
+  else
+    echo "Your system clipboard is unknown."
+    return
+  fi
 }
 
 
