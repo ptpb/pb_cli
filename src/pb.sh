@@ -6,7 +6,7 @@ private="${PB_PRIVATE:-0}"
 
 
 pb_ () {
-  local command filename
+  local filename extension
 
   filename="${1:--}"
   extension="${2:-}"
@@ -53,10 +53,6 @@ pb () {
       shift
       private=1
       pb_ "$@"
-      ;;
-    clipboard)
-      shift
-      pb_clipboard "$@"
       ;;
     *)
       pb_ "$@"
