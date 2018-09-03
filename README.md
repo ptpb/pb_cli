@@ -80,11 +80,13 @@ When you are done, press `q` once to stop recording.
 
 ### clipboard
 
-When set, by default, PB_CLIPBOARD will put the paste url in the X11 primary buffer.
+When set, by default, `PB_CLIPBOARD` will put the paste url in the X11 `primary` buffer. You can modify this behavior by setting `PB_CLIPBOARD_TOOL`, possibly with additional arguments.
 
 ```sh
 PB_CLIPBOARD=1 pb …
 ```
+
+For usability, you'll likely want to export this variable in your shell rc file if this is a feature you want to use regularly.
 
 ## advanced usage
 
