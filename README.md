@@ -23,6 +23,7 @@ exist on your own.
  - `jq`
  - [`capture`](https://github.com/buhman/capture) (optional, for screen capture)
  - `maim` (optional, for screenshots)
+ - `xclip` (optional, for clipboard manipulation)
 
 ## usage
 
@@ -76,6 +77,14 @@ pb gif
 ```
 
 When you are done, press `q` once to stop recording.
+
+### clipboard
+
+When set, by default, PB_CLIPBOARD will put the paste url in the X11 primary buffer.
+
+```sh
+PB_CLIPBOARD=1 pb …
+```
 
 ## advanced usage
 
