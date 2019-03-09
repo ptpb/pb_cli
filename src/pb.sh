@@ -1,6 +1,6 @@
 #!/bin/bash
 
-endpoint="${PB_ENDPOINT:-https://ptpb.pw}"
+endpoint="${PB_ENDPOINT:-https://0x0.st}"
 jq_args="${PB_JSON:--r .url}"
 private="${PB_PRIVATE:-0}"
 clipboard="${PB_CLIPBOARD}"
@@ -14,8 +14,7 @@ pb_ () {
 
   shift 2
 
-  data=$(curl -sF "c=@$filename" -F "f=-$extension" -F "p=$private" \
-           -H 'accept: application/json' "$@" "$endpoint" | jq $jq_args)
+  data=$(curl -sF "file=@$filename" "$@" "$endpoint")
   if [[ ! -z $clipboard ]]; then
     printf "${data}" | "${clipboard_tool}"
   fi
